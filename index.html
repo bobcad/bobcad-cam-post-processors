@@ -55,21 +55,51 @@
 </nav>
 <div class="container">
     <h1 style="margin-top:55px;">BobCAD-CAM Post Processors</h1>
-    <p style="margin-top:20px;line-height:1.5;font-size:16px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae fringilla dolor. Nulla maximus commodo felis. Vivamus ipsum neque, commodo vitae lacus a, feugiat iaculis magna. Sed ac lacus at metus tincidunt mattis id non libero. Nam tempus purus a ligula consequat, at fringilla ante blandit. Duis et elit ultricies, ultrices velit sed, molestie ante. Proin blandit tincidunt ex, quis pellentesque arcu dignissim in. Morbi id vulputate justo.</p>
+    <p style="margin-top:20px;line-height:1.5;font-size:16px;">This is an archive of post processors created for BobCAD-CAM V25-V28, and BobCAM for SolidWorks V2-V5. These posts are provided for free as-is and have not been updated for the current BobCAD posting engine, these posts are using old post variables and do not have the newest post questions and blocks. Because of this some of the newer features of the software may not work, and some of the code output may be incorrect. These posts may be used in the current versions of the software, however, please use these posts at your own risk and ensure proper verification and testing is done. Some corrections will likely be needed for these posts to work for your controller.</p>
 
     <ul class="nav nav-tabs" id="myTab" role="tablist" style="margin-top:65px;">
-  <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="mill-tab" data-bs-toggle="tab" href="#mill" role="tab" aria-controls="mill" aria-selected="true">Mill Posts</a>
-  </li>
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="lathe-tab" data-bs-toggle="tab" href="#lathe" role="tab" aria-controls="lathe" aria-selected="false">Lathe Posts</a>
-  </li>
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="wire-tab" data-bs-toggle="tab" href="#wire" role="tab" aria-controls="wire" aria-selected="false">Wire EDM Posts</a>
-  </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="intro-tab" data-bs-toggle="tab" href="#intro" role="tab" aria-controls="intro" aria-selected="true">Instructions</a>
+       </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="mill-tab" data-bs-toggle="tab" href="#mill" role="tab" aria-controls="mill" aria-selected="true">Mill Posts</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="lathe-tab" data-bs-toggle="tab" href="#lathe" role="tab" aria-controls="lathe" aria-selected="false">Lathe Posts</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="wire-tab" data-bs-toggle="tab" href="#wire" role="tab" aria-controls="wire" aria-selected="false">Wire EDM Posts</a>
+        </li>
 </ul>
 <div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="mill" role="tabpanel" aria-labelledby="mill-tab">
+    <div class="tab-pane fade show active" id="intro" role="tabpanel" aria-labelledby="intro-tab">
+        <div style="padding:20px; border-bottom:1px solid #dee2e6;">
+            <p style="margin-top:20px;line-height:1.5;font-size:16px;">In this repository there are 3 types of files, below is how to install these files into your version of BobCAD:</p>
+            <div style="font-size:18px;font-weight:600;line-height: 1.5;">1. Executable files (.exe)</div>
+            <ul style="margin-top:15px;margin-left:25px;font-size:16px;">
+                   <li style="padding:7px 0;">Download and run the .exe file</li>
+                   <li style="padding:7px 0;">Run through the wizard and select a version to install the post for.</li>
+                   <li style="padding:7px 0;">If you do not have the versions listed, select any one version from the list, a new folder will be created in the Data folder for the post and machine.</li>
+                   <li style="padding:7px 0;">Locate the post and machine file that are created. They will be located in your “C:\BobCAD-CAM Data folder” in the version that was selected in the wizard.</li>
+                   <li style="padding:7px 0;">Move the files that are created in the new version folder, into the version that you want to use the post for</li>
+            </ul>
+
+            
+            <div style="font-size:18px;font-weight:600;line-height: 1.5;margin: top 20px;">2. Compressed Folder (.zip)</div>
+            <ul style="margin-top:15px;margin-left:25px;font-size:16px;">
+                   <li style="padding:7px 0;">Right click on the .zip file and select Extract all…</li>
+                   <li style="padding:7px 0;">Move all the files into the post folder for your machine type, in the version of BobCAD you want to use the post for: <em>“C:\BobCAD-CAM Data\BobCAD-CAM V**\Posts\ [YourMachineType]”</em></li>
+            </ul>
+
+            
+            <div style="font-size:18px;font-weight:600;line-height: 1.5;margin-top: 20px;">3. Post Processor File (.MillPst / .LathePst / .EDMPST)</div>
+            <ul style="margin-top:15px;margin-left:25px;font-size:16px;">
+                   <li style="padding:7px 0;">Right click on the .zip file and select Extract all…</li>
+                   <li style="padding:7px 0;">Move the file into the post folder for your machine type, in the version of BobCAD you want to use the post for: <em>“C:\BobCAD-CAM Data\BobCAD-CAM V**\Posts\ [YourMachineType]"</em></li>
+            </ul>
+       </div>
+ </div>
+  <div class="tab-pane fade" id="mill" role="tabpanel" aria-labelledby="mill-tab">
          <div style="padding:20px; border-bottom:1px solid #dee2e6;">
                    <div class="row">
                        <div class="col-xs-12 col-sm-6"><div style="font-size:26px;">MILL Posts Files</div></div>
